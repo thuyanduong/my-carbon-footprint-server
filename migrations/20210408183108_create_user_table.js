@@ -1,6 +1,6 @@
 
 exports.up = function(knex) {
-    return knew.schema.createTable('users', function(table){
+    return knex.schema.createTable('users', function(table){
         table.increments('id');
         table.string('username');
         table.string('password');
