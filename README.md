@@ -42,7 +42,7 @@ From within the root directory:
 
 ### Roadmap
 
-View the project roadmap [here](LINK_TO_PROJECTS_TAB).
+View the project roadmap [here](https://github.com/my-carbon-tracker/my-carbon-footprint-server/projects/1).
 
 
 ## Contributing
