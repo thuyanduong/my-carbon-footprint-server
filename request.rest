@@ -24,19 +24,19 @@ Content-Type: application/json
 ###
 PATCH http://localhost:3000/auth/adjust/goal
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwiaWF0IjoxNjE4MDEwNzQ5LCJleHAiOjE2MTgwMTE0NDl9.0F7kuvjkZ06wxBdA9OsHpP24nuEK8XVLieKSkpUo0TY
+
 
 {
-    "username": "Carl",
-    "password": "123456",
-    "emission": 3000
+    "carbon_emission_goal": 2000
 }
 
 ###
 PATCH http://localhost:3000/auth/adjust/total
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwiaWF0IjoxNjE4MDEwNzQ5LCJleHAiOjE2MTgwMTE0NDl9.0F7kuvjkZ06wxBdA9OsHpP24nuEK8XVLieKSkpUo0TY
+
 
 {
-    "username": "Carl",
-    "password": "123456",
-    "emission": 3000
+    "result_grand_total": 5000
 }
