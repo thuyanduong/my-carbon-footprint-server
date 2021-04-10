@@ -15,7 +15,7 @@ The planet is warming and according to scientists we have about 6 years left to 
 
 ## Problem ##
 
-https://climateclock.world/mobile/index.html#/ 
+![climate clock] (https://climateclock.world/mobile/index.html#/) 
 
 According to scientists, to stabilize global temperatures at a sustainable level, global greenhouse gas emissions need to reach net zero by 2050. This reality must guide how we live our life. Although some may argue that mid-century deep decarbonization is most achievable by accelerating the deployment of existing zero-carbon technologies this way of thinking leads to overlooking the largest group of key players, humans. To what degree is the average person responsible for climate change? Since 2017 we have seen a rise in the average person within the United States contribution to carbon dioxide (CO₂) emissions to exceed more than 16 tons of CO2 per year. The world average is less than half the amount of the lowest carbon emissions of anyone in the US, which is 8.5 tons. The carbon footprint of the average American seems to rise every year, likely due to an increase in consumerism, demand for meat, and transportation.
 
@@ -34,6 +34,5 @@ Building a creative and fun UI for the quiz users take to know their carbon foot
 
 Sharing: invite friends to support, challenge, and cheer each other on.
 Adding awards for hitting goals
-Adding a climate clock
 Adding climate news articles(using NYTimes API)
-Making use of more API’s related to climate change(transportation API:https://connect.myclimate.org/api-overview )
+Making use of more API’s related to climate change(transportation API:https://connect.myclimate.org/api-overview)
