@@ -11,7 +11,19 @@ Intended for those who are environmentally conscious who want to assess how thei
 
 ## Summary ##
 
-The planet is warming and according to scientists we have about 6 years left to take decisive action to keep warming under the 1.5°C threshold. While we cannot stop global warming overnight, or even over the next several decades, we can slow the rate and limit the amount of global warming by reducing human carbon emissions. There is great potential for the collective actions of many individuals worldwide to reduce global warming by making changes in their daily and annual activities. Our app was built on the founding mission that there is power in small collective actions. The Carbon Tracker App allows people to calculate their carbon footprint and provides access to resources on how to lessen their footprint. Additionally, users can make accounts to keep track of how their carbon footprint changes over time. Other potential features include having data visualizations which show how a user’s carbon footprint compares to others, and seeing news articles related to climate change. 
+The planet is warming and according to scientists we have about 6 years left to take decisive action to keep warming under the 1.5°C threshold. While we cannot stop global warming overnight, or even over the next several decades, we can slow the rate and limit the amount of global warming by reducing human carbon footprint. 
+
+# What is carbon footprint?
+
+Carbon footprint is the amount of carbon dioxide emissions directly or indirectly is generated from a person's activity. According to current data an average person in the United states emits about 16 tons of CO2 per year compared to 4 tons globally making us one of the highest rates in the world. 
+
+# Why is it important? 
+
+<img width="859" alt="Screen Shot 2021-04-10 at 2 34 10 PM" src="https://user-images.githubusercontent.com/70560875/114281090-574dd080-9a0a-11eb-8754-03d7a7e170b6.png">
+
+The Climate Clock shows two numbers. The first, in red, is our deadline, the time we have left to take decisive action to keep warming under the 1.5°C threshold, a count down of how long it will take, at current rates of emissions, to burn through our carbon budget. The second number, in green, is the growing % of the world’s energy currently supplied from renewable sources. Our lifeline. The goal is to get our lifeline to 100% before our deadline reaches 0.
+
+This project aims to help us reach our lifeline before the dealine. There is great potential for the collective actions of many individuals worldwide to reduce global warming by making changes in their daily and annual activities. Our app was built on the founding mission that there is power in small collective actions. The Carbon Tracker App allows people to calculate their carbon footprint and provides access to resources on how to lessen their footprint. Additionally, users can make accounts to keep track of how their carbon footprint changes over time. Other potential features include having data visualizations which show how a user’s carbon footprint compares to others, and seeing news articles related to climate change. 
 
 ## Problem ##
 
