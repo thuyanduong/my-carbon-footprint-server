@@ -1,6 +1,13 @@
 # My-carbon-footprint
 
-Intended for those who are environmentally conscious who want to assess how their lifestyle contributes to climate change and want solutions on how they may be able to decrease their carbon footprint.
+This project is an online calulator that quantifies a person's carbon footprint through a year based on the user's diet and transportation. Intended for those who are environmentally conscious who want to assess how their lifestyle contributes to climate change and want solutions on how they may be able to decrease their carbon footprint. The goal is to achieve individual carbon neutrality. 
+
+# What is carbon footprint and why is it imporant?
+
+Carbon footprint is the amount of carbon dioxide emissions directly or indirectly is generated from a person's activity. According to current data an average person in the United states emits about 16 tons of CO2 per year compared to 4 tons globally making us one of the highest rates in the world. 
+
+<script src="https://climateclock.world/widget-v2.js" async></script>
+<climate-clock />
 
 ## Team
 
