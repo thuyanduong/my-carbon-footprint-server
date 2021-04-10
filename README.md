@@ -30,11 +30,16 @@ Carbon footprint is the amount of carbon dioxide emissions directly or indirectl
 
 ## Requirements
 
-- Node 
-- Express
-- Postgresql 
-- React
-- etc
+- Node 0.10.x
+- Express 4.17.1.x
+- Postgresql 9.1.x
+- PG 8.5.1.X
+- PG Promise 10.10.1.x
+- dotenv 8.2.0.x
+- knex 0.95.4.x
+- React 17.0.2.x
+- React-DOM 17.0.2.x
+- React-XML-Parser 1.1.8.x
 
 ## Development
 
@@ -43,7 +48,14 @@ Carbon footprint is the amount of carbon dioxide emissions directly or indirectl
 From within the root directory:
 
 ```sh
-<COMMANDS_HERE>
+npm install
+```
+
+From within the `client` directory:
+
+```sh
+npm install
+npm start
 ```
 
 ### Roadmap
@@ -59,3 +71,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 ## Style Guide
 
 This project adheres to the [Airbnb Style Guide](https://github.com/airbnb/javascript).
+
+## Entity-Relationship Diagram
+
+## Front-End Wireframe
+
+## App is deployed here: 
+
