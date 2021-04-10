@@ -13,11 +13,11 @@ Intended for those who are environmentally conscious who want to assess how thei
 
 The planet is warming and according to scientists we have about 6 years left to take decisive action to keep warming under the 1.5°C threshold. While we cannot stop global warming overnight, or even over the next several decades, we can slow the rate and limit the amount of global warming by reducing human carbon footprint. 
 
-# What is carbon footprint?
+What is carbon footprint?
 
 Carbon footprint is the amount of carbon dioxide emissions directly or indirectly is generated from a person's activity. According to current data an average person in the United states emits about 16 tons of CO2 per year compared to 4 tons globally making us one of the highest rates in the world. 
 
-# Why is it important? 
+Why is it important? 
 
 <img width="859" alt="Screen Shot 2021-04-10 at 2 34 10 PM" src="https://user-images.githubusercontent.com/70560875/114281090-574dd080-9a0a-11eb-8754-03d7a7e170b6.png">
 
