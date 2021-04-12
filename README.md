@@ -68,6 +68,8 @@ This project adheres to the [Airbnb Style Guide](https://github.com/airbnb/javas
 
 ## Entity-Relationship Diagram
 
+![My climate footprint](https://user-images.githubusercontent.com/70560875/114330682-37a0d000-9b10-11eb-848e-813dde025a39.png)
+
 ## Front-End Wireframe
 
 ## App is deployed here: 
