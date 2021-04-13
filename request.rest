@@ -5,8 +5,8 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "username": "Carly",
-    "password": "12345"
+    "username": "Car",
+    "password": "123456"
 }
 
 ###
@@ -15,7 +15,7 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "username": "Carl",
+    "username": "Car",
     "password": "123456",
     "emission": 3000
 }
@@ -24,19 +24,19 @@ Content-Type: application/json
 ###
 PATCH http://localhost:3000/auth/adjust/goal
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwiaWF0IjoxNjE4MDEwNzQ5LCJleHAiOjE2MTgwMTE0NDl9.0F7kuvjkZ06wxBdA9OsHpP24nuEK8XVLieKSkpUo0TY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwiaWF0IjoxNjE4MDEyNDEwLCJleHAiOjE2MTgwMTMxMTB9.drHJ3Ix0WOJe9JIUQOCunXE9iyDrq0KwQfFn6kjbaJo
 
 
 {
-    "carbon_emission_goal": 2000
+    "carbon_emission_goal": 1000
 }
 
 ###
 PATCH http://localhost:3000/auth/adjust/total
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwiaWF0IjoxNjE4MDEwNzQ5LCJleHAiOjE2MTgwMTE0NDl9.0F7kuvjkZ06wxBdA9OsHpP24nuEK8XVLieKSkpUo0TY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwiaWF0IjoxNjE4MDEyNDEwLCJleHAiOjE2MTgwMTMxMTB9.drHJ3Ix0WOJe9JIUQOCunXE9iyDrq0KwQfFn6kjbaJo
 
 
 {
-    "result_grand_total": 5000
+    "result_grand_total": 6000
 }
