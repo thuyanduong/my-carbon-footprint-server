@@ -11,13 +11,31 @@ const makeToken = (identity) => {
     return accToken 
 }
 
+const compare = (reqPass, user) =>{
+    return bcrypt.compare(reqPass, user.password, (err,res) => {
+        if(res){
+            return makeToken({user_id:user.id})
+        }
+        else{
+            return null
+        }
+    })
+}
+
+
 const login = async(req,res)=> {
     try{
-        const user = await db.one("SELECT * FROM users WHERE username = $1 AND password = $2 ", [req.body.username, req.body.password])
+        const user = await db.one("SELECT * FROM users WHERE username = $1 ", req.body.username)
         if(user){
             console.log("User found")
-            const auth = makeToken({user_id:user.id})
-            res.status(200).json({token:auth})
+            const match = await bcrypt.compare(req.body.password, user.password)
+            if(match){
+                const auth = makeToken({user_id:user.id})
+                res.status(200).json({token:auth})
+            }
+            else{
+                res.status(403).json({success:false, message: 'Passwords do not match'})
+            }
         }
         else {
             console.log(`no user found with username: ${req.body.username}`)
