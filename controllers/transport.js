@@ -5,7 +5,7 @@ const transportTotal = async(req,res)=> {
     let total = req.body.result_transport_total;
     // let user_id = req.body.user_id;
     let user_id = res.user_id;
-    if(!(Number.isInteger(total) && Number.isInteger(user_id))){
+    if(!(typeof total==='number' && Number.isInteger(user_id))){
         return res.status(400).json({
             message: "Bad input",
         });

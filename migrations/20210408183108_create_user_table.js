@@ -4,7 +4,7 @@ exports.up = function(knex) {
         table.increments('id');
         table.string('username');
         table.string('password');
-        table.bigInteger('result_grand_total');
+        table.decimal('result_grand_total');
         table.integer('carbon_emission_goal');
     })
 };
