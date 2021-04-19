@@ -4,6 +4,7 @@ const db = require('../db/db')
 // Insert new Food record
 const logFoodTotal = async(req,res)=> {
     let foodTotal = req.body.result_food_total;
+    let food_serving = req.body.food_serving
     // let user_id = req.body.user_id;
     let user_id = res.user_id;
     if(!(Number.isInteger(foodTotal) && Number.isInteger(user_id))){
@@ -12,7 +13,7 @@ const logFoodTotal = async(req,res)=> {
         });
     }
     try{
-        await db.none("INSERT INTO FOOD(result_food_total, user_id) VALUES($1,$2)",[foodTotal,user_id]);
+        await db.none("INSERT INTO FOOD(result_food_total, user_id, food_serving) VALUES($1,$2, $3)",[foodTotal,user_id, food_serving]);
         return res.status(200).json({
             message: "success",
         });

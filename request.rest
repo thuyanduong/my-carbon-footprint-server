@@ -40,3 +40,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyMSwia
 {
     "result_grand_total": 6000
 }
+
+###
+POST  http://localhost:3000/food/logfood
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjozMCwiaWF0IjoxNjE4ODU3NDM2LCJleHAiOjE2MTg5NDM4MzZ9.bo5CWK7ChDdl-DOGbtZgmdOiZE5PIozLrSb4N-FWtPw
+
+
+{
+    "result_food_total": 300,
+    "food_serving": "{meat:2}"
+}
