@@ -3,10 +3,10 @@ const cors = require('cors')
 const express = require('express');
 const userRouter = require('./routes/userRoutes')
 const foodRouter = require('./routes/foodRoutes')
+const estimateRouter = require('./routes/estimateRoutes');
 
-const transportRouter = require('./routes/transportRoutes')
-
-
+const transportRouter = require('./routes/transportRoutes');
+const db = require('./db/db');
 
 const app = express();
 
@@ -31,6 +31,13 @@ app.use(express.urlencoded());
 app.get("/",(req,res)=>{
     res.send("Hello");
 });
+//get data 
+app.get("/data", async (req,res) => {
+    const data = await db.query('select * from users order by result_grand_total asc;');
+    return res.send(data)
+})
+//send estimate quiz to db
+app.use("/logEmission", estimateRouter);
 
 app.use('/auth', userRouter)
 
