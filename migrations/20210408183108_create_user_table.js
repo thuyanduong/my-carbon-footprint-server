@@ -6,6 +6,8 @@ exports.up = function(knex) {
         table.string('password');
         table.decimal('result_grand_total');
         table.integer('carbon_emission_goal');
+        table.decimal('estimated_emission');
+        table.integer('location');
     })
 };
 
