@@ -87,11 +87,27 @@ const setEmissionGoal =async(req,res)=> {
     }
 }
 
-
+const getUserData = async(req,res) => {
+    console.log(res.user_id)
+    try{
+        const user = await db.one('SELECT * FROM users WHERE id=$1', [res.user_id, req.body])
+        res.status(200).send({
+            // message: "working",
+            name: user.username,
+            location: user.location,
+            emission: user.result_grand_total,
+            estimate: user.estimated_emission
+    })
+    }
+    catch(err){
+        res.status(500).send(err)
+    }
+}
 
 module.exports = {
     login,
     signUp,
     setTotalEmission,
-    setEmissionGoal
+    setEmissionGoal,
+    getUserData
 }
