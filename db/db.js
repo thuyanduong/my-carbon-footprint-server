@@ -1,14 +1,19 @@
 require('dotenv').config()
 const pgp = require("pg-promise")()
+const e = require('express');
+const knexfile = require("../knexfile");
 
-const cn = {
-    host: 'localhost',
-    //default  port
-    port: 5432,
-    database: 'footprint_test',
-    user: process.env.USER,
-    password: process.env.PASSWORD
-}
+
+    const cn = process.env.DATABASE_URL || 
+    {
+        host: 'localhost',
+        //default  port
+        port: 5432,
+        database: 'footprint_test',
+        user: process.env.USER,
+        password: process.env.PASSWORD
+    }  
+
 
 const db = pgp(cn)
 
