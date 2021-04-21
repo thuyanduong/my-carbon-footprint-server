@@ -1,6 +1,6 @@
 require('dotenv').config();
 const { Router } = require('express');
-const {logFoodTotal,foodTimeFrame,deleteFood,updateFood} = require('../controllers/food');
+const {logFoodTotal,foodTimeFrame,deleteFood,updateFood, getUserEntries} = require('../controllers/food');
 const router = Router();
 const decodeToken = require('../middleware/jwt');
 
@@ -10,6 +10,7 @@ const decodeToken = require('../middleware/jwt');
 // router.delete('/delete', deleteFood);
 // router.patch('/update', updateFood);
 
+router.get('/entries', decodeToken, getUserEntries)
 router.post('/logFood', decodeToken, logFoodTotal);
 router.post('/timeFrame', decodeToken, foodTimeFrame);
 router.delete('/delete', decodeToken, deleteFood);

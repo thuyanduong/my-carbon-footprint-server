@@ -4,9 +4,7 @@ const db = require('../db/db')
 // Insert new Food record
 const logFoodTotal = async(req,res)=> {
     let foodTotal = req.body.result_food_total;
-    let food_serving = req.body.food_serving;
-    console.log(food_serving)
-    // let user_id = req.body.user_id;
+    let food_serving = JSON.stringify(req.body.food_serving)
     let user_id = res.user_id;
     if(!(typeof foodTotal === 'number' && Number.isInteger(user_id))){
         return res.status(400).json({
@@ -14,7 +12,7 @@ const logFoodTotal = async(req,res)=> {
         });
     }
     try{
-        await db.none("INSERT INTO FOOD(result_food_total, user_id, food_serving) VALUES($1,$2, $3)",[foodTotal,user_id, food_serving]);
+        await db.none("INSERT INTO FOOD(result_food_total, user_id, food_serving) VALUES($1,$2,$3)",[foodTotal,user_id, food_serving]);
         return res.status(200).json({
             message: "success",
         });
@@ -97,9 +95,22 @@ const updateFood =  async(req,res)=> {
     }
 }
 
+const getUserEntries = async(req,res) =>{
+    const user_id = res.user_id
+    const date = new Date().toISOString().split('T')
+    const entries = await db.any('SELECT food_serving,id FROM food WHERE time_input > $2 AND user_id = $1', [user_id, date[0]])
+    const formattedEntries = entries.map(food => {
+        food.food_serving = JSON.parse(food.food_serving)
+        return food
+    })
+    res.status(200).json({response:formattedEntries});
+
+}
+
 module.exports = {
     logFoodTotal,
     foodTimeFrame,
     deleteFood,
-    updateFood
+    updateFood,
+    getUserEntries
 }
