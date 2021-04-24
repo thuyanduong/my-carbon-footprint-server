@@ -63,14 +63,20 @@ const signUp = async(req,res)=> {
 }
 
 const setTotalEmission =async(req,res)=> {
+    const {result_grand_total} = req.body
+
     try{
-        console.log('Response recieved id', res.user_id)
-        await db.none('UPDATE users SET result_grand_total =$2 WHERE id=$1', [res.user_id, req.body.result_grand_total])
+        console.log('setTotalEmission recieved response with id : ', res.user_id)
         const user = await db.one('SELECT * FROM users WHERE id=$1', res.user_id)
-        res.status(200).send({total:user.result_grand_total, user:user.username})
+        const reqGrandTotal = parseFloat(result_grand_total)
+        const dbGrandTotal = parseFloat(user.result_grand_total)
+        const newGrandTotal = dbGrandTotal + reqGrandTotal
+        await db.none('UPDATE users SET result_grand_total=$2 WHERE id=$1', [res.user_id, newGrandTotal])
+        const updatedUser = await db.one('SELECT * FROM users WHERE id=$1', res.user_id)
+        res.status(200).send({total:updatedUser.result_grand_total, user:updatedUser.username})
     }
     catch(err){
-
+        res.status(500).send(err)
     }
 }
 
