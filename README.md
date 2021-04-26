@@ -81,5 +81,5 @@ This project adheres to the [Airbnb Style Guide](https://github.com/airbnb/javas
 ![Screen Shot 2021-04-24 at 8 18 09 PM](https://user-images.githubusercontent.com/70560875/115976284-4fc61580-a53a-11eb-88ed-eb0ab3f19f17.png)
 
 
-## App is deployed here: https://admiring-davinci-6a9ca0.netlify.app/
+## App is deployed here: https://mycarbonfootprint.netlify.app/
 
