@@ -1,9 +1,8 @@
-# Project Name #
-Carbon Tracker App
+# Carbon Tracker #
 
 ## Heading ##
 
-My Carbon Footprint
+A Carbon Footprint Tracker
 
 ## Sub-Heading ##
 
